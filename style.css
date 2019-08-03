@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+body
+{
+	margin: 0;
+	padding: 0;r
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #f5f5f5;
+	font-family: 'Poppins', sans-serif;
+}
+
 #navBar {
     background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
     /* Chrome 10-25, Safari 5.1-6 */
@@ -21,10 +33,15 @@
 
 li a {
     color: black !Important;
+    margin: 5px;
 }
 li a:hover{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
     transition: 0.3s;
+    color: white !Important;
 }
 
 #home {
@@ -150,6 +167,8 @@ padding: 20px;
 	height: 400px;
 	background: #000;
 	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+    margin-bottom: 20px;
+    border-bottom: 20px;
 }
 .box .imgBx
 {
@@ -215,3 +234,134 @@ padding: 20px;
 	transition-delay: 0.5s;
 }
 
+.works{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 10px;
+}
+
+.main h1{
+text-align: center;
+margin-top : 0px;
+margin-left: 35%;
+margin-right: 35%;
+margin-bottom: 80px;
+border-bottom: 3px solid black;
+
+}
+
+.container1
+{
+	width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 20px;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.container1 .box1
+{
+	position: relative;
+	padding: 80px 40px 40px;
+	transition: 0.5s;
+	text-align: center;
+	background: #d8d8d8;
+}
+
+.container1 .box1:hover
+{
+	background: #ff0057;
+}
+.container1 .box1 p
+{
+	margin: 0;
+	padding: 0;
+	transition: 0.5s;
+}
+.container1 .box1 h4
+{
+	margin: 20px 0 0;
+	padding: 0;
+	transition: 0.5s;
+	font-size: 18px;
+	color: #ff0057;
+	font-weight: 700;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+.container1 .box1 h4 span
+{
+	font-weight: 600;
+	font-size: 14px;
+	color: #c5c5c5;
+	transition: 0.5s;
+}
+.container1 .box1:hover p,
+.container1 .box1:hover h4,
+.container1 .box1:hover h4 span
+{
+	color: #fff;
+}
+
+.container1 .box1 .imgBox1
+{
+	position: absolute;
+	top: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.container1 .box1:before
+{
+	content: '';
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	width: 80px;
+	height: 80px;
+	background: url(https://img.icons8.com/ios-filled/50/000000/quote-right.png);
+	background-size: cover;
+	opacity: 0.05;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.container1 .box1:hover:before
+{
+	transform: translateY(-60px);
+	opacity: 1;
+}
+
+.container1 .box1:after
+{
+	content: '';
+	position: absolute;
+	bottom: 20px;
+	left: 40px;
+	width: 80px;
+	height: 80px;
+	background: url(https://img.icons8.com/ios-filled/50/000000/quote-right.png);
+	background-size: cover;
+	opacity: 0.05;
+	pointer-events: none;
+	transition: 0.5s;
+	transform: rotate(180deg) translateY(0px);
+}
+.container1 .box1:hover:after
+{
+	transform: rotate(180deg) translateY(-60px);
+	opacity: 1;
+}
+@media (max-width: 768px)
+{
+	.container1 .box1
+	{
+		margin-top: 80px;
+	}
+}
