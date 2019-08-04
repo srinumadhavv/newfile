@@ -417,21 +417,38 @@ section.sec2 {
     margin-bottom: 30vh;
 }
 
-.contentFake{
-	background-color: #333;
-	height: 770px;
-}
- 
 #footer{
-    height: 40vh;
-    
+    background: #fff !Important;
 }
-
-#footer h1{
+#footer h1 {
     text-align: center;
     border-bottom: 3px solid black;
     margin-left: 35%;
-    margin-right:35%;
+    margin-right: 35%;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+    
+}
+
+.ico img{
+width: 300px;
+height: 300px;
+margin-left: 10%;
+
+}
+.icons ul li {
+    float: right;
+    margin: 10px;
+    list-style-type: none;
+    float: right;
+}
+
+.icons ul li: hover {
+    background: #fff;
+}
+
+.lis ul li {
+    list-style-type: none;
+    float: inherit;
 }
