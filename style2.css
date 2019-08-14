@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+body
+{
+	margin: 0;
+	padding: 0;
+	/*display: flex;
+	/*justify-content: center;
+	min-height: 100vh;*/
+	background: #f5f5f5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header-section
+{
+    background: #000;
+}
+
+.header-section h1
+{
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+}
+.menu-bar nav
+{
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff) !Important;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    height: 60px;
+    padding: 0 100px;
+}
+.menu-bar nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menu-bar nav ul li
+{
+    list-style: none;
+}
+.menu-bar nav ul li a
+{
+    display: block;
+    color: #fff;
+    line-height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+}
+.menu-bar nav ul li a.active,
+.menu-bar nav ul li a:hover
+{
+    background: #1064bd;
+}
+.stuck nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+section.sec1
+{
+    width: 100%;
+    height: 100vh;
+    background: url(bg.jpg);
+    background-size: cover;
+}
+section.sec2
+{
+    padding: 50px 100px;
+}
+section.sec3
+{
+    width: 100%;
+    height: 100vh;
+    background: url(bg2.jpg);
+    background-size: cover;
+}
+#home {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+}
+#curve {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#curve path {
+    fill: #fff;
+}
+
+.container
+{
+	width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 20px;
+	box-sizing: border-box;
+	padding: 20px;
+}
+.container .box
+{
+	position: relative;
+	padding: 80px 40px 40px;
+	transition: 0.5s;
+	text-align: center;
+	background: #fff;
+}
+.container .box:hover
+{
+	background: #ff0057;
+}
+.container .box p
+{
+	margin: 0;
+	padding: 0;
+	transition: 0.5s;
+}
+.container .box h4
+{
+	margin: 20px 0 0;
+	padding: 0;
+	transition: 0.5s;
+	font-size: 18px;
+	color: #ff0057;
+	font-weight: 700;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+.container .box h4 span
+{
+	font-weight: 600;
+	font-size: 14px;
+	color: #c5c5c5;
+	transition: 0.5s;
+}
+.container .box:hover p,
+.container .box:hover h4,
+.container .box:hover h4 span
+{
+	color: #fff;
+}
+.container .box .imgBox
+{
+	position: absolute;
+	top: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.container .box:before
+{
+	content: '';
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	width: 80px;
+	height: 80px;
+	background: url(https://img.icons8.com/ios-filled/50/000000/quote-right.png);
+	background-size: cover;
+	opacity: 0.05;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.container .box:hover:before
+{
+	transform: translateY(-60px);
+	opacity: 1;
+}
+
+.container .box:after
+{
+	content: '';
+	position: absolute;
+	bottom: 20px;
+	left: 40px;
+	width: 80px;
+	height: 80px;
+	background: url(https://img.icons8.com/ios-filled/50/000000/quote-right.png);
+	background-size: cover;
+	opacity: 0.05;
+	pointer-events: none;
+	transition: 0.5s;
+	transform: rotate(180deg) translateY(0px);
+}
+.container .box:hover:after
+{
+	transform: rotate(180deg) translateY(-60px);
+	opacity: 1;
+}
+@media (max-width: 768px)
+{
+	.container .box
+	{
+		margin-top: 80px;
+	}
+}
+
+
+#particles-js {
+    margin: 0vh;
+    /*margin-top:20vh;*/
+    position: relative;
+    z-index: -100;
+
+    width: 100%;
+    height: 90vh;
+
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+}
+
+#particle-js h1 {
+    font-size: 100%;
+    position: absolute;
+    z-index: -20;
+    font-weight: 1000px;
+    color: white;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 30vh;
+}
+
+#particle-js p {
+    font-size: 20%;
+    color: white;
+    margin-top: 20vh !Important;
+    margin-bottom: 30vh;
+}
