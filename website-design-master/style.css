@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-------------navbar-------------*/
+#navBar {
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-position: top left;
+    position: sticky;
+    z-index: 1000000;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+.navbar-brand {
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+
+}
+
+li a {
+    color: black !Important;
+    margin: 5px;
+}
+
+li a:hover {
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    transition: 0.3s;
+    color: white !Important;
+}
+
+/*-------------home-------------*/
+#home {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+}
+
+#curve {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#curve path {
+    fill: #fff;
+}
+
+section.sec2 {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+.center {
+    align-content: center;
+    float: right;
+    position: absolute;
+    top: 80%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+}
+
+.monitor {
+    width: 450px;
+    height: 300px;
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    border-bottom: 30px solid #d8d8d8;
+    border-radius: 10px;
+    float: right;
+}
+
+.monitor:before {
+    content: '';
+    width: 70px;
+    height: 60px;
+    background: #bdbdbd;
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: perspective(100px) translateX(-50%) rotateX(25deg) skewX(7deg);
+    z-index: -1;
+    transform-origin: bottom;
+    float: right;
+}
+
+.monitor:after {
+    content: '';
+    width: 140px;
+    height: 15px;
+    background: #d8d8d8;
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    z-index: -1;
+    transform-origin: bottom;
+}
+
+.monitor img {
+    position: absolute;
+    left: 50%;
+    bottom: -112px;
+    transform: translateX(-50%) scale(0.04);
+    float: right;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.overlay:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    width: 60%;
+    height: 100%;
+    background: rgba(0, 255, 255, .3);
+    transform: skewX(-5deg);
+}
+
+/*-------------Works-------------*/
+#latest {
+    align-items: center;
+    height: 20%;
+}
+
+#title {
+    justify-content: center;
+    text-align: center;
+    border-bottom: 3px solid black;
+    margin: 32%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+    margin-bottom: 20px;
+    border-bottom: 20px;
+}
+
+.box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx img {
+    opacity: 0;
+}
+
+.box .content {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.box:hover .content {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.box .content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.box .content p {
+    margin: 10px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
+}
+
+.box:hover .content p {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.works {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 10px;
+}
+
+/*-------------Faculty words-------------*/
+#main {
+    margin-bottom: 50px;
+    height: 80vh;
+
+}
+
+#main h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 120px;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+
+}
+
+.container1 {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.container1 .box1 {
+    position: relative;
+    padding: 80px 40px 40px;
+    transition: 0.5s;
+    text-align: center;
+    background: #d8d8d8;
+}
+
+.container1 .box1:hover {
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+}
+
+.container1 .box1 p {
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+.container1 .box1 h4 {
+    margin: 20px 0 0;
+    padding: 0;
+    transition: 0.5s;
+    font-size: 18px;
+    color: #56ccf2;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.container1 .box1 h4 span {
+    font-weight: 600;
+    font-size: 14px;
+    color: #c5c5c5;
+    transition: 0.5s;
+}
+
+.container1 .box1:hover p,
+.container1 .box1:hover h4,
+.container1 .box1:hover h4 span {
+    color: #fff;
+}
+
+.container1 .box1 .imgBox1 {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.container1 .box1:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background: url(https://img.icons8.com/ios-filled/50/000000/quote-right.png);
+    background-size: cover;
+    opacity: 0.05;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.container1 .box1:hover:before {
+    transform: translateY(-60px);
+    opacity: 1;
+}
+
+.container1 .box1:after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background: url(https://img.icons8.com/ios-filled/50/000000/quote-right.png);
+    background-size: cover;
+    opacity: 0.05;
+    pointer-events: none;
+    transition: 0.5s;
+    transform: rotate(180deg) translateY(0px);
+}
+
+.container1 .box1:hover:after {
+    transform: rotate(180deg) translateY(-60px);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .container1 .box1 {
+        margin-top: 80px;
+    }
+}
+
+#about h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 80px;
+    border-bottom: 3px solid black;
+}
+
+#video {
+    align-content: center;
+    margin-left: 13%;
+}
+
+#particles-js {
+    margin: 0vh;
+    /*margin-top:20vh;*/
+    position: relative;
+    z-index: -100;
+
+    width: 100%;
+    height: 90vh;
+
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+}
+
+#particle-js h1 {
+    font-size: 100%;
+    position: absolute;
+    z-index: -20;
+    font-weight: 1000px;
+    color: white;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 30vh;
+}
+
+#particle-js p {
+    font-size: 20%;
+    color: white;
+    margin-top: 20vh !Important;
+    margin-bottom: 30vh;
+}
+
+#footer{
+    background: #fff !Important;
+}
+#footer h1 {
+    text-align: center;
+    border-bottom: 3px solid black;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+    
+}
+
+.ico img{
+width: 300px;
+height: 300px;
+margin-left: 10%;
+
+}
+.icons ul li {
+    float: right;
+    margin: 10px;
+    list-style-type: none;
+    float: right;
+}
+
+.icons ul li: hover {
+    background: #fff;
+}
+
+.lis ul li {
+    list-style-type: none;
+    float: inherit;
+}
